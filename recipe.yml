@@ -112,6 +112,7 @@ stages:
           - rm -rf /FsGuard
           - rm -f ./minisign.pub ./minisign.key
           - chmod +x /usr/share/init.d/010-fsguard.sh
+          - chmod +x /usr/share/init.d/101-fix-gdm-path.sh
 
   - name: cleanup2
     type: shell
