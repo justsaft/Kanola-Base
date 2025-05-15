@@ -50,7 +50,6 @@ stages:
       - modules/00-vanilla-updates-utility.yml
       - modules/00-vanilla-prime-utility.yml
       - modules/01-workarounds-packages.yml
-      - modules/01-workarounds.yml
       - modules/01-kernel-version-file.yml
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
