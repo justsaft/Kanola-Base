@@ -1,6 +1,6 @@
 name: Kanola Base
 id: base
-vibversion: 1.0.1
+vibversion: 1.0.2
 
 stages:
 - id: build
@@ -21,7 +21,6 @@ stages:
     - echo 'PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"' > /etc/environment
     - sed -i '4,10d' /etc/profile
     - apt update
-    - apt upgrade -y
     - apt clean
     - apt-mark hold snapd gnome-software-plugin-snap
     - apt -y install squashfs-tools minisign
@@ -53,7 +52,6 @@ stages:
       - modules/01-workarounds-packages.yml
       - modules/01-workarounds.yml
       - modules/01-kernel-version-file.yml
-      - modules/02-waydroid-modules.yml
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/35-vanilla-apps.yml

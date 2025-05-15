@@ -3,3 +3,5 @@ type: apt
 sources:
   - packages:
     - accountsservice
+    - ntpsec
+    - network-manager-applet
